@@ -10,6 +10,6 @@ $ source .venv/bin/activate
 
 $ pip install "mcp[cli]" httpx
 
-$ pip install  sqlite3 json faker
+$ pip install  faker
 
 ```
