@@ -1,8 +1,8 @@
 # 🗄️ SQLite MCP Server
 
-**Query. Create. Analyze. Extend.**  
+**Query. Create. Analyze. Visualize.**  
 A lightweight Python-based MCP server for interacting with **SQLite** databases.  
-Easily ask questions, create databases & tables, run queries, and perform data analysis directly through AI-powered workflows.
+Easily ask questions, create databases & tables, run queries, analyze data, and even **visualize results** directly through AI-powered workflows.
 
 ---
 
@@ -22,6 +22,11 @@ Easily ask questions, create databases & tables, run queries, and perform data a
 - Perform SQL queries and get results instantly.  
 - Generate aggregated reports and summaries.  
 - Explore relationships across tables.
+
+### 📈 Visualization (with [Visualization MCP Server](https://github.com/xlisp/visualization-mcp-server))
+- Send query results to the visualization MCP server.  
+- Create charts, plots, and dashboards directly from SQL results.  
+- Supports interactive analysis with Claude or other MCP clients.  
 
 ---
 
@@ -53,6 +58,12 @@ Add the following to your `claude_desktop_config.json`:
   "args": [
     "/Users/yourname/Desktop/sqlite-mcp-server/sqlite_mcp_server.py"
   ]
+},
+"visualization": {
+  "command": "/Users/yourname/Desktop/visualization-mcp-server/.venv/bin/python",
+  "args": [
+    "/Users/yourname/Desktop/visualization-mcp-server/visualization_mcp_server.py"
+  ]
 }
 ```
 
@@ -61,6 +72,7 @@ Then restart Claude Desktop, and you’ll be able to interact with SQLite direct
 * **Ask questions** like *“What are the top 10 users by score?”*
 * **Create tables** with *“Make a table for products with name, price, and category.”*
 * **Analyze data** with *“Summarize average order values by month.”*
+* **Visualize results** with *“Plot a bar chart of sales by category.”*
 
 ---
 
@@ -68,6 +80,7 @@ Then restart Claude Desktop, and you’ll be able to interact with SQLite direct
 
 * `sqlite_mcp_server.py` is the main entry point.
 * Extend commands to support custom SQL operations or integrations.
+* Combine with [visualization-mcp-server](https://github.com/xlisp/visualization-mcp-server) for richer workflows.
 * Contributions are welcome — PRs and issues encouraged!
 
 ---
@@ -75,6 +88,4 @@ Then restart Claude Desktop, and you’ll be able to interact with SQLite direct
 ## 📜 License
 
 MIT License.
-
-```
 
