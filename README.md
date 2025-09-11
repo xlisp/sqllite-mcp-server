@@ -4,6 +4,8 @@
 A lightweight Python-based MCP server for interacting with **SQLite** databases.  
 Easily ask questions, create databases & tables, run queries, analyze data, and even **visualize results** directly through AI-powered workflows.
 
+![](./demo0.png)
+
 ---
 
 ## ✨ Features
@@ -52,13 +54,17 @@ pip install faker
 
 Add the following to your `claude_desktop_config.json`:
 
+config path example:  `/Users/xlisp/Library/Application\ Support/Claude/claude_desktop_config.json`
+
 ```json
-"sqlite-db": {
-  "command": "/Users/yourname/Desktop/sqlite-mcp-server/.venv/bin/python",
-  "args": [
-    "/Users/yourname/Desktop/sqlite-mcp-server/sqlite_mcp_server.py"
-  ]
-},
+
+  "sqlite-db": {
+    "command": "/Users/xlisp/PyPro/sqllite-mcp-server/.venv/bin/python",
+    "args": [
+      "/Users/xlisp/PyPro/sqllite-mcp-server/main.py"
+    ]
+  },
+
 "visualization": {
   "command": "/Users/yourname/Desktop/visualization-mcp-server/.venv/bin/python",
   "args": [
